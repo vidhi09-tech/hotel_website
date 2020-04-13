@@ -1,0 +1,248 @@
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* main styling */
+html,body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+/* utility class */
+.container{
+  margin: auto;
+  /* using max width help the elements to move when it is minimized or maxamized */
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px; 
+}
+.text-primary{
+  color: #f7c08a;
+}
+.lead{
+  font-size: 20px;
+  /* padding-bottom: 20px; */
+}
+.btn{
+  display: inline-block;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 13px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #333333;
+}
+.btn:hover{
+  background: #f7c08a;
+  color: #333333;
+}
+.btn-light{
+  
+  color: #333333;
+  background:#ffffff;
+  
+}
+.bg-dark{
+  background: #333333;
+  color: #ffffff;
+}
+
+.bg-primary{
+  color: #333333;
+  background: #f7c08a;
+}
+.bg-light{
+  background: #f4f4f4;
+  color: #333333;
+}
+.clr{
+  clear: both;
+}
+/* padding */
+.py-1{ padding: 10px 0;}
+.py-2{ padding: 20px 0;}
+.py-3{
+  padding: 30px 0;
+}
+.l-heading{
+  font-size: 40px;
+}
+/* for link */
+a{
+  color: #333333;
+  text-decoration: none;
+}
+/* making difference in the line of 3 headings
+   by making some px difference in two headings */
+h1,h2,h3{
+  padding-bottom: 20px;
+}
+/* as above we reset the margin and padding so we can re add them as per our need */
+p{
+  margin: 10px 0;
+}
+/* navbar */
+#navbar{
+  background: #333333;
+  color: #ffffff;
+  overflow: auto;
+}
+/* as there no words appera coz we didn't put color in the list links */
+#navbar a{
+  color: #ffffff;
+}
+/* now we have to float the elements */
+#navbar h1{
+  float: left;
+  padding-top: 20px;
+}
+#navbar ul{
+  float: right;
+  list-style: none;
+}
+/* now making the list item horizontal */
+#navbar ul li{
+  float: left;
+}
+#navbar ul li a{
+  display:block;
+  padding: 20px;
+  text-align: center;
+}
+#navbar ul li a:hover,
+#navbar ul li a.current{
+  background: #444444;
+  color: #f7c08a;
+}
+/* #navbar ul li:last-child{ 
+  padding-right: 100px;
+}*/
+/* Showcase */
+#showcase{
+  background: url(../img/showcase.jpg) no-repeat center center/cover;
+  height: 600px;
+
+}
+#showcase .showcase-content{
+  color: #ffffff;
+  text-align: center;
+  padding-top: 170px;
+}
+/* now making h1 bigger */
+#showcase .showcase-content h1{
+  font-size: 60px;
+  line-height: 1.2em;
+}
+/* .text-primary{ 
+  color: #f7c08a;
+}*/
+#showcase .showcase-content p{
+  padding-bottom: 20px;
+  line-height: 1.7em;
+}
+/* Home Info */
+#home-info{
+  height: 400px;
+}
+#home-info .info-img{
+  float:left;
+  width: 50%;
+  background: url('../img/photo-1.jpg') no-repeat;
+  min-height: 100%;
+}
+#home-info .info-content{
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 50px 30px;
+  overflow: hidden;
+}
+#home-info .info-content p{
+  padding-bottom: 30px;
+}
+/* features */
+.box{
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+}
+.box i{
+  margin-bottom: 10px;
+}
+
+#main-footer{
+  text-align: center;
+  background: #444444;
+  padding: 20px;
+  color: #f4f4f4;
+}
+/* About info */
+#about-info .info-right{
+  float: right;
+  width: 50%;
+  min-height: 100%;
+}
+#about-info .info-right img{
+  display: block;
+  margin: auto;
+  width: 70%;
+  border-radius: 50%;
+}
+#about-info .info-left{
+  float: left;
+  width: 50%;
+  min-height: 100%;
+}
+/* testimonials */
+#testimonials{
+  height: 600px;
+  background: url(../img/test-bg.jpg) no-repeat center center/cover;
+  padding-top: 40px;
+}
+#testimonials .testimonial img{
+  width: 100px;
+  float: left;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+#testimonials h2{
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 60px;
+}
+#testimonials .testimonial{
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+/* contact form */
+#contact-info .form-group{
+  margin-bottom: 20px;
+}
+#contact-info .form-group label{
+  display: block;
+  margin-bottom: 5px;
+}
+#contact-info .form-group input,textarea{
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  border: 1px #dddddd solid;
+}
+#contact-info textarea{
+  height: 100px;
+}
+#contact-info .form-group input:focus
+, #contact-info .form-group textarea:focus{
+  outline: none;
+  border-color: #f7c08a;
+}
+
+
+
+
